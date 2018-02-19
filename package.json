@@ -1,5 +1,5 @@
 {
-  "name": "my-react-shell",
+  "name": "clicker",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -38,6 +38,7 @@
     "babel-core": "^6.26.0",
     "css-loader": "^0.28.9",
     "file-loader": "^1.1.6",
+    "material-ui": "v1.0.0-beta.34",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "script-ext-html-webpack-plugin": "^1.8.8",
