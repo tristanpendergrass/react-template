@@ -9,7 +9,6 @@ import { render } from 'react-dom';
 
 import App from './App';
 
-
 // Needed for react dev tools
 if (typeof window !== 'undefined') {
   window.React = React;
