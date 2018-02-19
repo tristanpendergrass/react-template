@@ -1,0 +1,41 @@
+{
+  "name": "my-react-shell",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "start:server": "babel-node server.js",
+    "lint": "eslint \"src/**/*.js\""
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2016": "^6.24.1",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "html-webpack-harddisk-plugin": "^0.1.0",
+    "html-webpack-plugin": "^2.30.1",
+    "react-hot-loader": "3.0.0-beta.7",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "css-loader": "^0.28.9",
+    "file-loader": "^1.1.6",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "script-ext-html-webpack-plugin": "^1.8.8",
+    "webfonts-loader": "^4.0.1",
+    "webpack-md5-hash": "^0.0.6"
+  }
+}
