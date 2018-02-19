@@ -1,0 +1,160 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["eslint:recommended", "plugin:react/recommended", "airbnb"],
+  "plugins": ["react"],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "__dirname": true,
+    "React": true
+  },
+  "parserOptions": {
+
+    "ecmaVersion": 2017,
+
+    "ecmaFeatures": {
+
+      // Enable react dom elements.
+      "jsx": true,
+
+      // Allows common redux object spread. Currently stage 3.
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "settings": {
+    "import/resolver": "webpack"
+  },
+  "rules": {
+    /*
+     * documentation: https://eslint.org/docs/user-guide/configuring
+     *
+     * "off" or 0 - turn the rule off
+     * "warn" or 1 - turn the rule on as a warning (doesn’t affect exit code)
+     * "error" or 2 - turn the rule on as an error (exit code is 1 when triggered)
+     */
+
+    // ignore linebreak style. the CRLF / LF endings wont matter
+    // if a windows user correctly converts CRLF to LF upon commits otherwise
+    // there are errors every line.
+    "linebreak-style": 0,
+
+    // babel inserts `'use strict';` for us
+    "strict": 2,
+
+    // allow shadowing
+    "no-shadow": 0,
+
+
+    // disallow unnecessary semicolons
+    "no-extra-semi": 2,
+
+    // require or disallow use of semicolons instead of ASI
+    "semi": 2,
+
+    // disallow use of undeclared variables unless mentioned in a /*global */ block
+    "no-undef": 2,
+
+    // enforce consistent indentation
+    "indent": 2,
+
+    // enforce a maximum line length
+    "max-len": ["warn", 150],
+
+    // disallow the unary operators ++ and --
+    "no-plusplus": 0,
+
+    // Require parens in arrow function arguments
+    "arrow-parens": 0,
+
+    // Require or disallow a space before function parenthesis
+    "space-before-function-paren": 2,
+
+    // Missing trailing comma
+    "comma-dangle": 0,
+
+    // Expected space(s) after "switch"
+    "semi-spacing": 0,
+
+    // Expected space(s) after "switch"
+    "keyword-spacing": 2,
+
+    // Missing space before opening brace
+    "space-before-blocks": 2,
+
+    // A space is required before '}'
+    "object-curly-spacing": 0,
+
+    // Arrow function used ambiguously with a conditional expression
+    "no-confusing-arrow": 0,
+
+    // Strings must use singlequote
+    "quotes": 2,
+
+    // Unnecessary 'else' after 'return'
+    "no-else-return": 0,
+
+    // A space is required after ','
+    "comma-spacing": 2,
+
+    // Unexpected block statement surrounding arrow body
+    "arrow-body-style": 0,
+
+    // Unexpected console statement
+    "no-console": 2,
+
+    // Unexpected string concatenation
+    "prefer-template": 0,
+
+    // Block must not be padded by blank lines
+    "padded-blocks": 2,
+
+    // Assignment to property of function parameter 'options'
+    "no-param-reassign": [2, { "props": true }],
+
+    // ‘as-needed’ Unnecessarily quoted property 'Authorization' found
+    "quote-props": 0,
+
+    // Newline required at end of file but not found
+    "eol-last": 2,
+
+    // disallow multiple empty lines
+    "no-multiple-empty-lines": [2, { "max": 1 }],
+
+    // A jsx extension is not required for files containing jsx -
+    //    https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
+    "react/jsx-filename-extension": 0,
+
+    // This rule struggles with flow and class properties
+    //    https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-comp.md
+    "react/sort-comp": 0,
+
+    // Remove mandatory display name for react components.
+    //    https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/display-name.md
+    "react/display-name": 0,
+
+    // Prevent missing props validation in a React component definition
+    //    https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md
+    "react/prop-types": 0,
+
+    // ensure imports point to files/modules that can be resolved
+    //    https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unresolved.md
+    "import/no-unresolved": 2,
+
+    // Require modules with a single export to use a default export
+    //    https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md
+    "import/prefer-default-export": 0,
+
+    // Forbid the import of external modules that are not declared in the package.json
+    //    https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md
+    "import/no-extraneous-dependencies": 0,
+
+    // Ensure consistent use of file extension within the import path
+    //    https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md
+    "import/extensions": 0,
+    "react/prefer-stateless-function": 0,
+    "react/forbid-prop-types": 0,
+  }
+}
+
